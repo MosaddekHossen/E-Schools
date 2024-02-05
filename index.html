@@ -19,9 +19,10 @@
 
 <body>
     <!-- Header section -->
-    <header>
-        <div class="navbar">
-            <div class="navbar-start">
+    <header class=" bg-[#F0FFF0] xl:pt-5">
+        <div class="navbar flex justify-between max-w-screen-xl mx-auto">
+            <img class="hidden lg:block" src="./images/Group 1.svg" alt="Logo">
+            <div>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -31,40 +32,50 @@
                         </svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
-                        <li><a href="#" class="text-[18px] font-medium text-white">Home</a></li>
-                        <li><a href="./index.html" class="text-[18px] font-medium text-white">About Us</a></li>
-                        <li><a href="./contact.html" class="text-[18px] font-medium text-white">Contact</a></li>
+                        <li><a href="#" class="text-[18px] font-medium text-black">Books</a></li>
+                        <li><a href="#" class="text-[18px] font-medium text-black">Courses</a></li>
+                        <li><a href="#" class="text-[18px] font-medium text-black">Others</a></li>
+                        <li><a href="./index.html" class="text-[18px] font-medium text-black">Blog</a></li>
+                        <li><a href="./contact.html" class="text-[18px] font-medium text-black">Sing in</a></li>
                     </ul>
                 </div>
-                <a class="btn md:hidden btn-ghost text-xl px-0">School</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a href="#" class="text-[18px] font-medium text-black">Home</a></li>
-                    <li><a href="./index.html" class="text-[18px] font-medium text-black">About Us</a></li>
-                    <li><a href="./contact.html" class="text-[18px] font-medium text-black">Contact</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
+                <a class="btn md:hidden btn-ghost text-xl px-0">E-School</a>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 flex items-center">
+                        <li><a href="#" class="text-[18px] font-medium text-black">Books</a></li>
+                        <li><a href="#" class="text-[18px] font-medium text-black">Courses</a></li>
+                        <li><a href="#" class="text-[18px] font-medium text-black">Others</a></li>
+                        <li><a href="./index.html" class="text-[18px] font-medium text-black">Blog</a></li>
+                        <li><a href="./contact.html"
+                                class="text-[18px] font-medium bg-[#21B573] py-3 px-5 text-white rounded-full">Sing
+                                in</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     <!-- Main Section -->
     <main>
         <!-- Hero section -->
-        <section class="bg-[#F9F6E2]">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-20 px-8 lg:px-0">
-                <div class="text-center">
-                    <h3 class="text-[#111] text-[20px] md:text-[28px] lg:text-[32px] font-medium">---SALE FEVER---</h3>
-                    <h1 class=" text-[35px] md:text-[45px] lg:text-[58px] text-[#111] font-bold">Purchase TK 200 or
-                        above & get <span class="text-[#E527B2]">20% off</span>
-                    </h1>
-                    <p class="text-[#111] md:text-[24px] text-[18px] font-medium py-7 lg:py-0 lg:pt-14">Use Promo Code
-                        <span class="bg-[#E527B2] rounded-lg text-white py-2 px-5">SELL200</span>
+        <section class="bg-[#F0FFF0]">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center lg:py-20 pt-10 px-7 xl:px-0">
+                <div>
+                    <p class="text-[18px] text-red-600">Are you ready to Learn?
                     </p>
+                    <h1 class=" text-[35px] md:text-[40px] lg:text-[58px] text-[#111] font-bold">Learn With fun <br>
+                        on <span class="text-[#21B573]">any schedule</span>
+                    </h1>
+                    <p class="text-black text-[18px] font-medium py-5">Lorem ipsum dolor sit amet,
+                        consectetur <br> <span class="mt-2 block">adipiscing elit. Varius blandit facilisis quam
+                            netus.</span>
+                    </p>
+                    <button
+                        class="customBtn text-[18px] text-white rounded-full mb-5 bg-[#21B573] mt-3 font-semibold py-2 px-7">Get
+                        Started</button>
                 </div>
                 <div class="w-[350px] lg:w-[550px]">
-                    <img src="./images/Summer 1.png" alt="">
+                    <img src="./images/Frame.png" alt="Banner Image">
                 </div>
             </div>
         </section>
