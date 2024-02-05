@@ -5,7 +5,7 @@ function handlerClickBtn(target) {
     const itemName = target.childNodes[5].innerText;
     count++;
     const li = document.createElement('li');
-    li.innerText = `${count}. ${itemName}`;
+    li.innerText = `${itemName} X`;
     selectedItemContainer.appendChild(li);
     const price = target.childNodes[7].innerText.split(' ')[0];
     total = parseFloat(total) + parseFloat(price);

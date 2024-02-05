@@ -60,11 +60,12 @@
         <!-- Cards section -->
         <section>
             <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-5 py-24 justify-between">
-                <div class="mx-8 lg:mx-0">
+                <div class="mx-8 lg:mx-0 w-8/12">
                     <h2 class="text-[40px] text-[#413960] font-bold pb-6">All Courses</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- One card -->
-                        <div class="bg-white text-center p-4 rounded-lg" onclick="handlerClickBtn(this)">
+                        <div class="bg-white text-center p-4 rounded-lg drop-shadow-2xl"
+                            onclick="handlerClickBtn(this)">
                             <div class="bg-[#F8F8F8] px-20 py-7 rounded-lg text-center flex justify-center">
                                 <img src="./images/prod1.png" alt="">
                             </div>
@@ -109,7 +110,8 @@
                             <p class="text-[#11111180] text-[20px] font-normal">39.00 TK</p>
                         </div>
                         <!-- Two card -->
-                        <div class="bg-white text-center p-4 rounded-lg" onclick="handlerClickBtn(this)">
+                        <div class="bg-white text-center p-4 rounded-lg drop-shadow-2xl"
+                            onclick="handlerClickBtn(this)">
                             <div class="bg-[#F8F8F8] px-20 py-7 rounded-lg text-center flex justify-center">
                                 <img class="my-0 lg:my-4" src="./images/prod2.png" alt="">
                             </div>
@@ -154,7 +156,8 @@
                             <p class="text-[#11111180] text-[20px] font-normal">25.00 TK</p>
                         </div>
                         <!-- Three card -->
-                        <div class="bg-white text-center p-4 rounded-lg" onclick="handlerClickBtn(this)">
+                        <div class="bg-white text-center p-4 rounded-lg drop-shadow-2xl"
+                            onclick="handlerClickBtn(this)">
                             <div class="bg-[#F8F8F8] px-20 py-7 rounded-lg text-center flex justify-center">
                                 <img class="my-0 lg:my-5" src="./images/prod3.png" alt="">
                             </div>
@@ -198,11 +201,10 @@
                             <h3 class="text-[#111] font-semibold text-[20px]">Home Cooker</h3>
                             <p class="text-[#11111180] text-[20px] font-normal">49.00 TK</p>
                         </div>
-                    </div>
-                    <h2 class="text-[40px] text-[#111] font-semibold py-6 mt-5">Sportswear</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
                         <!-- Four card -->
-                        <div class="bg-white text-center p-4 rounded-lg" onclick="handlerClickBtn(this)">
+                        <div class="bg-white text-center p-4 rounded-lg drop-shadow-2xl"
+                            onclick="handlerClickBtn(this)">
                             <div class="bg-[#F8F8F8] px-20 py-7 rounded-lg text-center flex justify-center">
                                 <img class="my-3 lg:my-6" src="./images/prod4.png" alt="">
                             </div>
@@ -247,7 +249,8 @@
                             <p class="text-[#11111180] text-[20px] font-normal">39.00 TK</p>
                         </div>
                         <!-- Five card -->
-                        <div class="bg-white text-center p-4 rounded-lg" onclick="handlerClickBtn(this)">
+                        <div class="bg-white text-center p-4 rounded-lg drop-shadow-2xl"
+                            onclick="handlerClickBtn(this)">
                             <div class="bg-[#F8F8F8] px-20 py-7 rounded-lg text-center flex justify-center">
                                 <img src="./images/prod5.png" alt="">
                             </div>
@@ -292,7 +295,8 @@
                             <p class="text-[#11111180] text-[20px] font-normal">69.00 TK</p>
                         </div>
                         <!-- Six card -->
-                        <div class="bg-white text-center p-4 rounded-lg" onclick="handlerClickBtn(this)">
+                        <div class="bg-white text-center p-4 rounded-lg drop-shadow-2xl"
+                            onclick="handlerClickBtn(this)">
                             <div class="bg-[#F8F8F8] px-20 py-7 rounded-lg text-center flex justify-center">
                                 <img class="my-0 lg:my-3" src="./images/prod6.png" alt="">
                             </div>
@@ -338,31 +342,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[310px] mt-[84px] mx-8 lg:mx-0">
-                    <div class=" bg-white rounded-lg p-5">
-                        <h3 class="text-[#111] text-[24px] font-medium pb-4">Have coupon?</h3>
-                        <label class="input-group border-2 rounded-lg border-[#11111126]">
-                            <input type="text" id="couponInput" placeholder="Coupon code"
-                                class="bg-white pl-3 text-[#11111166] font-normal" />
-                            <button disabled
-                                class="btn bg-[#E527B2] font-semibold text-white text-[18px] rounded-lg px-3 py-2 cursor-pointer"
-                                id="applyId">Apply</button>
-                        </label>
-                    </div>
-                    <div class=" bg-white rounded-lg px-5 pt-5 pb-14 mt-5 relative">
+                <div class="w-4/12 mt-[84px] mx-8 lg:mx-0">
+                    <div class=" bg-white drop-shadow-2xl rounded-lg px-5 pt-5 pb-14 relative">
                         <div id="selected-item"></div>
                         <div style="border: 1px solid#11111126;" class="my-1"></div>
-                        <h3 class="text-[24px] text-[#111] font-medium">Total price: <span class="text-[#777676]"
-                                id="total">0</span><span class="text-[#777676]"> TK</span></h3>
-                        <h3 class="text-[24px] text-[#111] font-medium">Discount: <span class="text-[#777676]"
-                                id="discountId">0</span><span class="text-[#777676]"> TK</span></h3>
-                        <h3 class="text-[24px] text-[#111] font-medium">Total: <span class="text-[#777676]"
-                                id="final-price">0</span><span class="text-[#777676]"> TK</span></h3>
-                        <div style="border: 1px solid#11111126;" class="mt-3"></div>
-                        <div class="text-center">
-                            <button disabled
-                                class="btn purchaseBtn bg-[#E527B2] inline-block font-semibold text-white text-[20px] rounded-lg py-3 px-12 ml-1 absolute left-6 top-45 mt-6 cursor-pointer"><label
-                                    for="my_modal_9">Make Purchase</label></button>
+
+                        <div class="flex justify-between">
+                            <h3 class="text-[24px] text-[#111] font-medium">Sub-Total: </h3>
+                            <div>
+                                <span class=" text-[#111] text-[24px] font-medium" id="total">0</span><span
+                                    class="text-[24px] text-[#111] font-medium">
+                                    TK</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <h3
+                                class="text-[18px] font-medium bg-[#21B573] inline-block py-3 mt-10 px-5 text-white rounded-full">
+                                CheckOut
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -422,7 +419,7 @@
             <div class="pt-2">
                 <div class="flex px-3 m-auto pt-3 text-sm flex-col
               max-w-screen-lg items-center">
-                    <p class="mt-5">© Copyright 2020. All Rights Reserved.</p>
+                    <p class="mt-5">Copyright &copy; 2024 21daysofcode.com</p>
                 </div>
             </div>
         </div>
